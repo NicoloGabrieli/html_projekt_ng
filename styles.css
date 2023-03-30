@@ -1,0 +1,159 @@
+h1 {
+  background: linear-gradient(to right, #F9F295, #E0AA3E, #E0AA3E, #B88A44);
+  background-size: 20vw;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+@keyframes shine {
+  to {
+    background-position: right;
+  }
+}
+
+.onepager {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: crosshair;
+}
+
+.cool{
+
+opacity: 1;
+
+}
+
+#Titel {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Book Antiqua", monospace;
+}
+
+header {
+  background-color: #060D0D;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: black ;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 8vh;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #2980b9;
+}
+
+section {
+  margin: 0 auto;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  background-color: #ecf0f1;
+  margin-bottom: 150px;
+  margin-top: 150px;
+  padding: 50px;
+  text-align: center;
+  height: 45vh;
+  width: 50vw;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 28px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#Seite {
+  text-decoration: none;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -99;
+}
+
+#uebermich {
+  color: white;
+  background-image: url("beach.jpg");
+  background-size: 60vw 60vh;
+}
+
+#faehigkeiten {
+  color: white;
+  background-image: url("pexels-markus-spiske-1089438.jpg");
+  background-size: 60vw 60vh;
+}
+
+#portfolio {
+  color: white;
+  background-image: url("pexels-jorge-jesus-614117.jpg");
+  background-size: 60vw 60vh;
+}
+
+#kontakt {
+  color: white;
+  background-image: url("antoine-barres-jay5BqVyf5A-unsplash.jpg");
+  background-size: 60vw 60vh;
+}
