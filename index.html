@@ -4,12 +4,192 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <meta name="viewport" content="initial-scale"> -->
-    <link rel="icon" type="image/x-icon" href="ngabrieli.png">
+    <link rel="icon" type="image/x-icon" href="ngabrielifavi-removebg-preview.png">
     <title>Personal Website</title>
-    <style></style>
+    <style>
+      h1 {
+  color: #e6ba7d;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+.onepager {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: crosshair;
+  font-size: 2.25rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Book Antiqua", serif;
+}
+
+#Titel {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Book Antiqua", serif;
+  background-image: url("Download.png");
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #060D0D;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 8vh;
+}
+
+nav {
+  background-color: black;
+  color: #e6ba7d;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav li {
+  margin: 0 10px;
+  align-items: center;
+  text-align: center;
+}
+
+nav a {
+  color: #e6ba7d;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1rem;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #e6ba7d;
+  color: black;
+  padding: 0.75rem;
+  font-size: 1.3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+#center {
+  font-size: 1.5rem;
+}
+
+section {
+  color: white;
+  margin: 0 auto;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  text-align: center;
+  align-items: center;
+  height: 45vh;
+  width: 50vw;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+section:last-of-type {
+  opacity: 0;
+
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+#kontakt{
+  color: white;
+}
+p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+#Seite {
+  text-decoration: none;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -99;
+}
+
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e6ba7d;
+  border-radius: 20px;
+  border: 3px solid #e6ba7d;
+}
+    </style>
   </head>
   <body>
-    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
     <nav>
       <ul>
         <li><a href="Uebermich.html">Über mich</a></li>
@@ -41,7 +221,7 @@
       <h2><a class="onepager" href="Portfolio.html">Portfolio</a></h2>
       <h3>Projekte und Arbeiten</h3>
     </section>
-    <section id="kontakt">
+    <section style="color: white;" id="kontakt">
       <h2><a class="onepager" href="Kontakt.html">Kontakt</a></h2>
       <h3>Kontaktieren Sie mich</h3>
     </section>
