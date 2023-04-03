@@ -1,6 +1,5 @@
 h1 {
-  background: linear-gradient(to right, #F9F295, #E0AA3E, #E0AA3E, #B88A44);
-  background-size: 20vw;
+ color: #e6ba7d;
   text-decoration: none;
   padding: 10px;
   border-radius: 5px;
@@ -8,14 +7,7 @@ h1 {
   margin-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   }
-@keyframes shine {
-  to {
-    background-position: right;
-  }
-}
 
 .onepager {
   color: white;
@@ -43,6 +35,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Book Antiqua", monospace;
+  
 }
 
 header {
@@ -88,13 +81,13 @@ nav a:hover {
 }
 
 section {
+  color: white;
   margin: 0 auto;
   height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 50px;
-  background-color: #ecf0f1;
   margin-bottom: 150px;
   margin-top: 150px;
   padding: 50px;
@@ -134,26 +127,3 @@ p {
   z-index: -99;
 }
 
-#uebermich {
-  color: white;
-  background-image: url("beach.jpg");
-  background-size: 60vw 60vh;
-}
-
-#faehigkeiten {
-  color: white;
-  background-image: url("pexels-markus-spiske-1089438.jpg");
-  background-size: 60vw 60vh;
-}
-
-#portfolio {
-  color: white;
-  background-image: url("pexels-jorge-jesus-614117.jpg");
-  background-size: 60vw 60vh;
-}
-
-#kontakt {
-  color: white;
-  background-image: url("antoine-barres-jay5BqVyf5A-unsplash.jpg");
-  background-size: 60vw 60vh;
-}
