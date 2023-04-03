@@ -46,8 +46,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Book Antiqua", serif;
-  background-image: url("Download.png");
-  overflow-x: hidden;
+  background-color: #060D0D;
 }
 
 header {
@@ -56,6 +55,7 @@ header {
   padding: 2rem;
   text-align: center;
   margin-top: 8vh;
+  border-bottom: 1px #e6ba7d solid;
 }
 
 nav {
@@ -165,12 +165,24 @@ p {
 }
 #ich{
   float: right;
-  height: 55vh;
-  width: 27.5vw;
+  height: 65%;
+  width: 30%;
   margin: 25px;
   padding: 25px;
+  top: 0;
+  margin-top: 0;
 }
-
+.abschnitt{
+  color: #e6ba7d;
+  margin-top: 15%;
+  margin-left: 15%;
+  font-weight: bold;
+}
+#steckbrief{
+  color: white;
+  margin-left: 14.5%;
+  margin-top: 0;
+}
 body::-webkit-scrollbar {
   width: 12px;
 }
