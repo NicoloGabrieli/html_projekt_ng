@@ -7,8 +7,13 @@ h1 {
   margin-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
+  font-size: 2.25rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
   }
-
+html{
+  font-size: 16px;
+}
 .onepager {
   color: white;
   text-decoration: none;
@@ -19,6 +24,9 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   cursor: crosshair;
+  font-size: 2.25rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 .cool{
@@ -34,8 +42,8 @@ opacity: 1;
 body {
   margin: 0;
   padding: 0;
-  font-family: "Book Antiqua", monospace;
-  
+  font-family: "Book Antiqua", serif;
+  background-image: url("Download.png");
 }
 
 header {
@@ -69,16 +77,21 @@ nav li {
 }
 
 nav a {
-  color: white;
+  color: #e6ba7d;
   text-decoration: none;
-  padding: 10px;
+  padding: 1rem;
   font-size: 20px;
+  transition: all 0.5s ease-in-out;
 }
 
 nav a:hover {
-  background-color: white;
-  color: #2980b9;
+  background-color: #e6ba7d;
+  color: black;
+  padding: 1.5rem;
+  padding: 15px;
+  transition: all 0.5s ease-in-out;
 }
+
 
 section {
   color: white;
@@ -107,7 +120,7 @@ h2 {
 }
 
 p {
-  font-size: 28px;
+  font-size: 1.75rem;
   text-align: center;
   align-items: center;
   display: flex;
