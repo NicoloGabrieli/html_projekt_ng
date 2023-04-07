@@ -161,15 +161,14 @@ p {
   min-height: 100%;
   z-index: -99;
 }
-#ich {
+/* #ich {
   position: absolute;
-  top: 0;
+  top: 25%;
   right: 0;
   height: 65%;
-  width: 30%;
-  margin: 25px;
-  padding: 25px;
-}
+  width: 27.%;
+  margin: 25%;
+} */
 .abschnitt {
   color: #e6ba7d;
   margin-top: 15%;
@@ -193,4 +192,32 @@ body::-webkit-scrollbar-thumb {
   background-color: #e6ba7d;
   border-radius: 20px;
   border: 3px solid black;
+}
+
+#ich {
+  position: absolute;
+  top: 36%;
+  right: 3.1%;
+  height: 60%;
+  width: auto;
+}
+#text {
+  position: absolute;
+  top: 27.5%;
+  left: 10%;
+  padding-right: 20%;
+  white-space: nowrap;
+
+}
+th {
+  text-align: left; 
+  font-weight: bold; 
+}
+table th, table td {
+  padding-left: 20px;
+  padding-bottom: 7px;
+}
+#caesar{
+  color: #e6ba7d;
+  font-weight: bold;
 }
