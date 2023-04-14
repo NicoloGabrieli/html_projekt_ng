@@ -223,3 +223,13 @@ table th, table td {
   color: #e6ba7d;
   font-weight: bold;
 }
+
+#ptbd1{
+  float: right;
+}
+#ptbd2{
+  float: left;
+}
+#pt1, #pt2{
+  color: white;
+}
