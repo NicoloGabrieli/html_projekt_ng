@@ -14,3 +14,15 @@ function animateSections() {
 animateSections();
 
 window.addEventListener("scroll", animateSections);
+var secretCode = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "KeyB", "KeyA"];
+var secretCodePosition = 0;
+document.addEventListener("keydown", function(event) {
+    if (event.code === secretCode[secretCodePosition]) {
+        secretCodePosition++;
+        if (secretCodePosition === secretCode.length) {
+            window.location.href = "easteregg.html";
+        }
+    } else {
+        secretCodePosition = 0;
+    }
+});

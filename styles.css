@@ -264,4 +264,19 @@ table th, table td {
   align-items: center;
   text-align: center;
 }
-
+.egg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: black;
+  height: calc(100vh - 8vh);
+  margin-top: 8vh;
+}
+#eggo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  font: 1px;
+  color: white;
+}
