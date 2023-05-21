@@ -289,7 +289,7 @@ table th, table td {
 .email-button {
   text-decoration: none;
   color: #e6ba7d;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 .footer_cnt {
   display: flex;
