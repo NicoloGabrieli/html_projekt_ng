@@ -283,3 +283,18 @@ table th, table td {
   font: 1px;
   color: white;
 }
+.contactMail{
+  color: white;
+}
+.email-button {
+  text-decoration: none;
+  color: #e6ba7d;
+  vertical-align: middle;
+}
+.footer_cnt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 2rem;
+}

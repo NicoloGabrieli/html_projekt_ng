@@ -31,16 +31,32 @@
       </header>
     </div>
     <div id="knt">
-        <h3>Ihr Name</h3>
-        <input id="name" type="text">
-        <h3>Ihre E-Mail</h3>
-        <input id="email" type="text">
-        <h3>Ihr Anliegen</h3>
-        <input id="anliegen" type="text">
-        <h3>Bemerkungen</h3>
-        <input id="bemerkungen" type="text">
+        <form action="submit.php" method="post">
+          <label for="name">Ihr Name</label>
+          <br>
+          <input type="text" id="name" name="name" required><br><br>
+      
+          <label for="email">Ihre E-Mail</label>
+          <br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="email">Ihr Anliegen</label>
+          <br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="message">Beschreibung (optional)</label>
+          <br>
+          <textarea id="message" name="message" rows="5" required></textarea><br><br>
+      
+          <input type="submit" value="Submit">
+        </form>
     </div>
   
+    <footer class="footer_cnt">
+      <p class="contactMail">Sie können mich direkt unter dieser</p>
+      <a href="mailto:ngabrielibs@gmail.com" class="email-button" >Email</a>
+      <p class="contactMail">erreichen</p> 
     
+    </footer>
   </body>
 </html>
