@@ -35,7 +35,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Book Antiqua", serif;
 }
 
 #Titel {
@@ -289,7 +288,6 @@ table th, table td {
 .email-button {
   text-decoration: none;
   color: #e6ba7d;
-  /* vertical-align: middle; */
 }
 .footer_cnt {
   display: flex;
@@ -297,4 +295,25 @@ table th, table td {
   justify-content: center;
   color: white;
   margin-top: 2rem;
+}
+#message{
+  resize: none;
+  width: 20%;
+}
+input, textarea{
+  border: 2px solid #e6ba7d;
+}
+input{
+  width: 15%;
+}
+#buttonium{
+  border: none !important;
+  width: 200px !important;
+  height: 30px !important;
+  background-color: #e6ba7d;
+  color: white;
+}
+#konami{
+  text-decoration: none;
+  color: #e6ba7d;
 }
