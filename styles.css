@@ -48,6 +48,7 @@ body {
   background-color: black;
 }
 
+
 header {
   background-color: #050505;
   color: white;
@@ -317,3 +318,52 @@ input{
   text-decoration: none;
   color: #e6ba7d;
 }
+#img_f {
+  margin-top: 0;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+#body_f{
+  overflow: hidden;
+}
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: black;
+  margin-top: 5%;
+  
+}
+
+.bar {
+  width: 0;
+  height: 80px;
+  background-color: red;
+  transition: width 2s ease;
+  margin-bottom: 10px;
+
+}
+
+.chart-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #666666;
+  
+}
+
+div.chart-container{
+  width: 100%;
+}
+div#inhalt{
+  width: 100%;
+}
+#container-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#auflistung{}

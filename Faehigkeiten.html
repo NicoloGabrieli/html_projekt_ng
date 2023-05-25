@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Webseite</title>
   </head>
-  <body>
+  <body id="body_f">
     <link rel="stylesheet" href="styles.css" />
     <nav>
       <ul>
@@ -15,10 +15,7 @@
         <li><a href="Portfolio.html">Portfolio</a></li>
         <li><a href="Kontakt.html">Kontakt</a></li>
       </ul>
-    </nav>  <!-- <video autoplay muted loop id="myVideo">
-      <source src="bgvds.mp4" type="video/mp4" />
-    </video>
-   -->
+    </nav>
 
     <div id="myHeader">
       <header>
@@ -26,8 +23,48 @@
         <p id="center">Fähigkeiten</p>
       </header>
     </div>
-    <div>
-      <img src="" alt="">
+    <div id="container-grid">
+      <div id="texte">
+        <ul id="auflistung">
+          <li>hola</li>
+          <li>hola</li>
+          <li>hola</li>
+          <li>hola</li>
+          <li>hola</li>
+        </ul>
+        
+      </div>
+      <div id="inhalt">
+        <div class="chart-container">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div class="chart-labels">
+          <span>0</span>
+          <span>25</span>
+          <span>50</span>
+          <span>75</span>
+          <span>100</span>
+        </div>
+      </div>
+    
     </div>
+    
+    <script>
+      window.addEventListener("DOMContentLoaded", function() {
+        const bars = document.querySelectorAll(".bar");
+  
+        setTimeout(function() {
+          bars[0].style.width = "80%";
+          bars[1].style.width = "70%";
+          bars[2].style.width = "60%";
+          bars[3].style.width = "70%";
+          bars[4].style.width = "90%";
+        }, 20);
+      });
+    </script>
   </body>
-</html>
+  </html>
