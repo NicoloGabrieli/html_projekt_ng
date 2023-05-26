@@ -10,7 +10,7 @@
       
     </style>
   </head>
-  <body>
+  <body id="contacts-k">
     <link rel="stylesheet" href="styles.css" />
     <nav>
       <ul>
@@ -34,19 +34,25 @@
         <form action="submit.php" method="post">
           <label for="name">Ihr Name</label>
           <br>
-          <input type="text" id="name" name="name" required><br><br>
+          <input type="text" id="name" name="name" required placeholder="Bsp: Anakin Skywalker"
+          oninvalid="this.setCustomValidity('Geben Sie hier Ihren Namen an')"
+          oninput="this.setCustomValidity('')"><br><br>
       
           <label for="email">Ihre E-Mail</label>
           <br>
-          <input type="email" id="email" name="email" required><br><br>
+          <input type="email" id="email" name="email" required placeholder="Bsp: anakin.skywalker@vader.com"
+          oninvalid="this.setCustomValidity('Geben Sie hier Ihre E-Mail an')"
+          oninput="this.setCustomValidity('')"><br><br>
 
           <label for="email">Ihr Anliegen</label>
           <br>
-          <input type="email" id="anliegen" name="email" required><br><br>
+          <input type="email" id="anliegen" name="email" required
+          oninvalid="this.setCustomValidity('Geben Sie hier Ihr Anliegen an')"
+          oninput="this.setCustomValidity('')"><br><br>
 
           <label for="message">Beschreibung (optional)</label>
           <br>
-          <textarea id="message" name="message" rows="5" required></textarea><br><br>
+          <textarea id="message" name="message" rows="5" ></textarea><br><br>
       
           <input type="submit" id="buttonium" value="Senden">
         </form>
