@@ -38,6 +38,9 @@ html {
 }
 
 #Titel {
+  color: #e6ba7d;
+  font-size: 60px;
+  font-weight:400;
   text-decoration: none;
 }
 
@@ -81,6 +84,8 @@ nav ul {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 nav li {
@@ -103,6 +108,7 @@ nav a:hover {
   background-color: #e6ba7d;
   color: black;
   padding: 15px;
+  border-radius: 5px;
   font-size: 25px;
   font-weight: bold;
   transition: all 0.5s ease-in-out;
@@ -225,6 +231,7 @@ table th, table td {
 #caesar{
   color: #e6ba7d;
   font-weight: bold;
+  text-decoration: none !important;
 }
 #pt1, #pt2, #pt3{
   color: white;
@@ -334,16 +341,17 @@ input{
   align-items: flex-start;
   gap: 20px;
   background-color: black;
-  margin-top: 5%;
+  margin-top: 30px;
   
 }
 
 .bar {
   width: 0;
   height: 80px;
-  background-color: red;
+  background-color: #e6ba7d;
   transition: width 2s ease;
   margin-bottom: 10px;
+  border-radius: 5px;
 
 }
 
@@ -352,7 +360,7 @@ input{
   justify-content: space-between;
   margin-top: 10px;
   font-size: 12px;
-  color: #666666;
+  color: white;
   
 }
 
@@ -360,10 +368,37 @@ div.chart-container{
   width: 100%;
 }
 div#inhalt{
-  width: 100%;
+  width: 95%;
 }
 #container-grid{
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 20% 80%;
 }
-#auflistung{}
+#uebermichhtag, #faehigkeitentag, #portfoliotag, #kontakttag{
+  border-bottom: 2px solid #e6ba7d;
+}
+#texte{
+  grid-column: 1;
+  color: white;
+  margin-top: 30px;
+}
+#inhalt{
+  grid-column: 2;
+}
+#auflistung{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+li{
+  height: 20%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.table-f{
+  font-weight: bold;
+  font-size: 12.5px;
+}

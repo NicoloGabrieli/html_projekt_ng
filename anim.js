@@ -26,3 +26,15 @@ document.addEventListener("keydown", function(event) {
         secretCodePosition = 0;
     }
 });
+
+window.addEventListener("DOMContentLoaded", function() {
+  const bars = document.querySelectorAll(".bar");
+
+  setTimeout(function() {
+    bars[0].style.width = "80%";
+    bars[1].style.width = "70%";
+    bars[2].style.width = "60%";
+    bars[3].style.width = "70%";
+    bars[4].style.width = "90%";
+  }, 20);
+});
