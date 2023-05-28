@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <meta name="viewport" content="initial-scale"> -->
     <link
       id="favi"
       rel="icon"
@@ -15,14 +14,24 @@
   </head>
   <body>
     <link rel="stylesheet" href="styles.css" />
-    <nav>
-      <ul>
+    <nav id="menu123">
+      <ul class="main-menu">
         <li><a href="Uebermich.html">Über mich</a></li>
         <li><a href="Faehigkeiten.html">Fähigkeiten</a></li>
         <li><a href="Portfolio.html">Portfolio</a></li>
         <li><a href="Kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
+    <div class="topnav">
+      <h4 class="active">Nicolò Gabrieli</h4>
+      <div id="myLinks">
+        <a href="Uebermich.html">Fähigkeiten</a>
+        <a href="Faehigkeiten.html">Fähigkeiten</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Kontakt.html">Kontakt</a>
+      </div>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <video autoplay muted loop id="myVideo">
       <source src="pics/bgvds.mp4" type="video/mp4" />
     </video>
@@ -35,7 +44,7 @@
     </div>
 
     <section id="uebermich">
-      <h2><a class="onepager" href="Uebermich.html">Über mich</a></h2>
+      <h2><a id="uebermicht" class="onepager" href="Uebermich.html">Über mich</a></h2>
       <h3>Mein Steckbrief</h3>
     </section>
     <section id="faehigkeiten">
@@ -62,5 +71,15 @@
       >
       an
     </p>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
   </body>
 </html>

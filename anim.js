@@ -38,3 +38,4 @@ window.addEventListener("DOMContentLoaded", function() {
     bars[4].style.width = "90%";
   }, 20);
 });
+
