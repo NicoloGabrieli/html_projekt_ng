@@ -59,7 +59,7 @@ header {
   color: white;
   padding: 2rem;
   text-align: center;
-  margin-top: 8vh;
+  margin-top: 30px;
   border-bottom: 1px #e6ba7d solid;
 }
 
@@ -88,8 +88,8 @@ nav ul {
   padding: 0;
   margin: 0;
   border-bottom: 1px #e6ba7d solid;
-  margin-top: 0; /* Hinzugefügt, um den oberen Abstand zu entfernen */
-  margin-bottom: 0; /* Hinzugefügt, um den unteren Abstand zu entfernen */
+  margin-top: 0; 
+  margin-bottom: 0; 
 }
 
 
@@ -451,8 +451,13 @@ iframe {
   height: 60vh; 
 }
 
- 
- 
+
+@media only screen and (max-width: 1144px){
+
+ul {
+  width: 90%;
+}
+}
  @media only screen and (max-width: 480px){
 
 body{
@@ -470,7 +475,6 @@ body{
 }
 .topnav {
   overflow: hidden;
-  /* background-color: black; */
   position: relative;
 }h4{
   background-color: black;
@@ -482,6 +486,7 @@ body{
 
 .topnav a {
   color: white;
+  background-color: black;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -490,6 +495,8 @@ body{
 }
 
 .topnav a.icon {
+  margin-top: 4%;
+  margin-right: 5%;
   background-image: url(pics/Bar_Graph_-_Presentation__1_-removebg-preview.png);
   background-size: cover;
   display: block;
@@ -500,21 +507,26 @@ body{
 header{
   top:0;
   margin-top: 0;
+  background-color: #010101 ;
 }
 section{
-  border: 3px solid wheat;
+  border: 3px solid #e6ba7d;
   border-radius: 5px;
 }
 
 .active {
+  padding: 5%;
   background-color: black;
   color: white;
 } 
-header{
-  background-color: #010101 ;
-}
+
 #eggo{
   display: none;
 }
+.onepager{
+background-color: none;
+border: 1px solid #e6ba7d;
+}
+
  }
 
