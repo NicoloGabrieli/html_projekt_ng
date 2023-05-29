@@ -1,6 +1,6 @@
 h1 {
   color: #e6ba7d;
-  text-decoration: none;
+  text-decoration: none !important;
   padding: 10px;
   border-radius: 5px;
   font-size: 36px;
@@ -461,23 +461,13 @@ iframe {
 
 
 @media screen and (max-width: 1024px) {
-  #inhalt_um {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  #steckbrief {
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  #bild_um {
-    margin: 0 auto;
-    text-align: center;
-  }
+ 
   #grid-item2, #grid-item3, #grid-item6{
     display: flex;
     align-items: center;
+  }
+  #eggo{
+    display: none;
   }
 }
 @media only screen and (max-width: 1180px) {
@@ -495,7 +485,10 @@ iframe {
   #auflistung {
     opacity: 0;
   }
- 
+  .email-button {
+    text-decoration: none;
+    color: #e6ba7d !important;
+}
   .grid-item img {
     display: none;
   }
@@ -579,3 +572,4 @@ iframe {
     border: 1px solid #e6ba7d;
   }
 }
+

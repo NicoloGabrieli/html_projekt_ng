@@ -46,20 +46,16 @@ function myFunction() {
     x.style.display = "block";
   }
 }
-// Elementreferenzen zu den <span>-Elementen mit der Klasse "bar" erhalten
 var spanElements = document.getElementsByClassName('bar');
 
-// Array mit den gewünschten Texten für jedes <span>-Element erstellen
+
 var textArray = ['HTML', 'CSS', 'PHP', 'JAVA', 'POWERAPPS'];
 
-// Funktion zum Aktualisieren des Inhalts, der Schriftfarbe und des linken Außenabstands der <span>-Elemente
+
 function updateSpanContent() {
-  // Bildschirmbreite abrufen
   var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-  // Überprüfen, ob die Bildschirmbreite den Schwellenwert überschreitet
   if (screenWidth <= 480) {
-    // Aktualisiere den Inhalt, die Schriftfarbe und den linken Außenabstand aller <span>-Elemente mit der Klasse "bar"
     for (var i = 0; i < spanElements.length; i++) {
       spanElements[i].textContent = textArray[i] || '';
       spanElements[i].style.color = 'white';
@@ -71,7 +67,6 @@ function updateSpanContent() {
 
     }
   } else {
-    // Zurücksetzen des Inhalts, der Schriftfarbe und des linken Außenabstands aller <span>-Elemente mit der Klasse "bar"
     for (var i = 0; i < spanElements.length; i++) {
       spanElements[i].textContent = '';
       spanElements[i].style.color = '';
@@ -80,6 +75,5 @@ function updateSpanContent() {
   }
 }
 
-// Funktion beim Laden der Seite und beim Ändern der Bildschirmgröße aufrufen
 window.addEventListener('load', updateSpanContent);
 window.addEventListener('resize', updateSpanContent);
