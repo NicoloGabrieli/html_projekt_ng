@@ -201,13 +201,23 @@ p {
   position: absolute;
   top: 25%;
   right: 0;
+  bottom: 0;
   height: 65%;
-  width: 27.%;
-  margin: 25%;
+  width: auto;  
+}
+#inhalt_um{
+  display: grid;
+  grid-template-rows: auto auto;
+}
+#steckbrief{
+  grid-row: 1;
+}
+#bild_um{
+  grid-row: 2;
 }
 .abschnitt {
   color: #e6ba7d;
-  margin-top: 15%;
+  margin-top: 5%;
   margin-left: 15%;
   font-weight: bold;
 }
@@ -451,7 +461,29 @@ iframe {
   height: 60vh; 
 }
 
+@media only screen and (max-width: 1024px){
+  #inhalt_um{
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+  #stecky{
+    grid-row: 1;
+  }
+  #bild_um{
+    grid-row: 2;
+  }
+}
 
+
+@media only screen and (max-width: 1180px){
+  
+  #ich{
+    height: auto;
+    width: 300px;
+  }
+
+
+}
 @media only screen and (max-width: 1144px){
 
 ul {
