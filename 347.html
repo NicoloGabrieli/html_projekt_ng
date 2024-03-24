@@ -1,98 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      id="favi"
-      rel="icon"
-      type="image/x-icon"
-      href="pics/ngabrielifavi-removebg-preview.png"
-    />
-    <title>Kontakt</title>
-    <style></style>
-  </head>
-  <body id="contacts-k">
-    <link rel="stylesheet" href="styles.css" />
-    <nav id="menu123">
-      <ul class="main-menu">
-        <li><a href="Uebermich.html">Über mich</a></li>
-        <li><a href="Faehigkeiten.html">Fähigkeiten</a></li>
-        <li><a href="Portfolio.html">Portfolio</a></li>
-        <li><a href="Kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav>
-    <div class="topnav">
-      <h4 class="active">Nicolò Gabrieli</h4>
-      <div id="myLinks">
-        <a href="Uebermich.html">Über Mich</a>
-        <a href="Faehigkeiten.html">Fähigkeiten</a>
-        <a href="Portfolio.html">Portfolio</a>
-        <a href="Kontakt.html">Kontakt</a>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    id="favi"
+    rel="icon"
+    type="image/x-icon"
+    href="pics/ngabrielifavi-removebg-preview.png"
+  />
+  <title>Kontakt</title>
+  <style>
+    /* Stile für das Iframe-Element */
+    iframe {
+      width: 100%;
+      height: calc(100vh - 8vh); /* Hier passen wir die Höhe entsprechend an */
+      border: none; /* Rand entfernen, um eine nahtlose Integration zu erreichen */
+    }
+    /* Festlegen der Hintergrundfarbe der Seite */
+    body {
+      background-color: white;
+      color: black; /* Textfarbe auf schwarz setzen */
+    }
+    /* Stile für das Menü */
+    #menu123 {
+      background-color: #333; /* Hintergrundfarbe des Menüs */
+      color: white; /* Textfarbe des Menüs */
+    }
+    #menu123 ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    #menu123 ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    #menu123 ul li a {
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+<body id="contacts-k">
+  <nav id="menu123">
+    <ul class="main-menu">
+      <li><a href="Uebermich.html">Über mich</a></li>
+      <li><a href="Faehigkeiten.html">Fähigkeiten</a></li>
+      <li><a href="Portfolio.html">Portfolio</a></li>
+      <li><a href="Kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
 
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <div id="burger-icon"></div>
-        </a>
-    <div id="myHeader">
-      <header>
-        <a id="Titel" href="index.html">Personal Webseite</a>
-        <p id="center">Kontakt</p>
-      </header>
-    </div>
-    <div id="knt">
-      <form  method="post">
-        <label for="name">Ihr Name</label>
-        <br />
-        <input
-          type="text"
-          id="name"
-          name="name"
-          required
-          placeholder="Bsp: Anakin Skywalker"
-          oninvalid="this.setCustomValidity('Geben Sie hier Ihren Namen an')"
-          oninput="this.setCustomValidity('')"
-        /><br /><br />
+  <div id="myHeader">
+    <header>
+      <h1>Header</h1>
+    </header>
+  </div>
 
-        <label for="email">Ihre E-Mail</label>
-        <br />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          placeholder="Bsp: anakin.skywalker@vader.com"
-          oninvalid="this.setCustomValidity('Geben Sie hier Ihre E-Mail an')"
-          oninput="this.setCustomValidity('')"
-        /><br /><br />
+  <!-- Hier wird das Word-Dokument eingebettet -->
+  <iframe src="/Users/nicolo.gabrieli/Documents/GBS/M_347/347_1.docx" frameborder="0"></iframe>
 
-        <label for="email">Ihr Anliegen</label>
-        <br />
-        <input
-          type="text"
-          id="anliegen"
-          name="anliegen"
-          required
-          oninvalid="this.setCustomValidity('Geben Sie hier Ihr Anliegen an')"
-          oninput="this.setCustomValidity('')"
-        /><br /><br />
-
-        <label for="message">Beschreibung (optional)</label>
-        <br />
-        <textarea id="message" name="message" rows="5"></textarea><br /><br />
-
-        <input type="submit" id="buttonium" value="Senden" />
-      </form>
-    </div>
-
-    <footer class="footer_cnt">
-      <p class="contactMail">
-        Sie können mich direkt unter dieser
-        <a href="mailto:ngabrielibs@gmail.com" class="email-button">Email</a>
-        erreichen
-      </p>
-    </footer>
-    <script src="anim.js"></script>
-  </body>
+  <script>
+    // Deine JavaScript-Anpassungen hier hinzufügen, falls benötigt
+  </script>
+</body>
 </html>
