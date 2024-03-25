@@ -1,4 +1,4 @@
-mconst sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll("section");
 
 function animateSections() {
   for (let section of sections) {
