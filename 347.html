@@ -16,6 +16,8 @@
       h1,
       h2 {
         color: #007bff;
+        border-bottom: 2px solid #007bff; /* Trennlinie unter Überschriften */
+        padding-bottom: 5px; /* Abstand unter Überschriften */
       }
       h2 {
         margin-top: 20px;
@@ -36,204 +38,224 @@
       }
       table {
         border-collapse: collapse;
-        width: 80%; /* reduce table width */
+        width: 80%; /* reduziere die Tabellenbreite */
         margin-bottom: 20px;
+        border: 2px solid #007bff; /* füge eine Umrandung hinzu */
       }
       th,
       td {
         border: 1px solid #ddd;
-        padding: 8px; /* reduce padding */
+        padding: 8px; /* reduziere das Padding */
         text-align: left;
       }
       th {
         background-color: #f2f2f2;
       }
+      .section {
+        margin-bottom: 40px; /* Abstand zwischen Abschnitten */
+        padding-bottom: 20px; /* Abstand unter Abschnitten */
+        border-bottom: 2px solid #eee; /* Trennlinie unter Abschnitten */
+      }
     </style>
   </head>
   <body>
-    <h1>
-      <a
-        href="https://www.notion.so/Docker-Befehle-2416caf8951d46f1bfb62870445af1d9?pvs=21"
-        >Docker Befehle</a
-      >
-    </h1>
-    <h2>Wichtige Links</h2>
-    <ul>
-      <li>
-        <a href="https://moodle.gbssg.ch/course/view.php?id=30">Moodle</a>
-      </li>
-      <li>
-        <a href="https://gbssg.gitlab.io/m347/"
-          >Modul 347 Dienst mit Container anwenden</a
+    <div class="section">
+      <h1>
+        <a
+          href="https://www.notion.so/Docker-Befehle-2416caf8951d46f1bfb62870445af1d9?pvs=21"
+          >Docker Befehle</a
         >
-      </li>
-    </ul>
+      </h1>
+      <h2>Wichtige Links</h2>
+      <ul>
+        <li>
+          <a href="https://moodle.gbssg.ch/course/view.php?id=30">Moodle</a>
+        </li>
+        <li>
+          <a href="https://gbssg.gitlab.io/m347/"
+            >Modul 347 Dienst mit Container anwenden</a
+          >
+        </li>
+      </ul>
+    </div>
 
-    <h2>Begriffserklärungen</h2>
-    <ul>
-      <li>
-        <strong>Containerisierung:</strong> Schreibgeschützte Vorlage mit dem
-        Speicherbild eines Containers.
-      </li>
-      <li><strong>Image:</strong> Aktive Instanz eines Images.</li>
-      <li>
-        <strong>Layer:</strong> Teil eines Images, der einen Befehl oder eine
-        Datei enthält.
-      </li>
-      <li>
-        <strong>Repository:</strong> Gruppierung von gleichnamigen Images mit
-        verschiedenen Tags.
-      </li>
-      <li>
-        <strong>Registry:</strong> Verwaltet Repositories, z.B. DockerHub.
-      </li>
-    </ul>
+    <div class="section">
+      <h2>Begriffserklärungen</h2>
+      <ul>
+        <li>
+          <strong>Containerisierung:</strong> Schreibgeschützte Vorlage mit dem
+          Speicherbild eines Containers.
+        </li>
+        <li><strong>Image:</strong> Aktive Instanz eines Images.</li>
+        <li>
+          <strong>Layer:</strong> Teil eines Images, der einen Befehl oder eine
+          Datei enthält.
+        </li>
+        <li>
+          <strong>Repository:</strong> Gruppierung von gleichnamigen Images mit
+          verschiedenen Tags.
+        </li>
+        <li>
+          <strong>Registry:</strong> Verwaltet Repositories, z.B. DockerHub.
+        </li>
+      </ul>
+    </div>
 
-    <h2>Unterschied zwischen Virtualisierung und Cloud</h2>
-    <ul>
-      <li>
-        Virtualisierung dreht sich um das Teilen eines einzelnen Computers in
-        mehrere Teile, während Cloud Computing darum geht, Programme und Daten
-        über das Internet auf Servern auszuführen und zu speichern.
-      </li>
-    </ul>
+    <div class="section">
+      <h2>Unterschied zwischen Virtualisierung und Cloud</h2>
+      <ul>
+        <li>
+          Virtualisierung dreht sich um das Teilen eines einzelnen Computers in
+          mehrere Teile, während Cloud Computing darum geht, Programme und Daten
+          über das Internet auf Servern auszuführen und zu speichern.
+        </li>
+      </ul>
+    </div>
+    <div class="section">
+        <h2 class="section-title">Sie können verschiedene Versionen (Tags) eines Container-Images nutzen</h2>
+        <p>
+          Dies ist meistens die Version des Images, beliebt sind “latest” oder die Version “22.04”.
+        </p>
+      </div>
+    <div class="section">
+      <h2>Elementare Docker-Befehle</h2>
+      <ul>
+        <li>
+          Sie kennen die grundlegenden Befehle zum Erzeugen, Starten, Beenden
+          und Löschen von Images und Containern.
+        </li>
+        <li>
+          Sie können die wichtigsten Optionen von docker run (--name, --rm,
+          --network, --ip, -d, -it, -p, -v, -e) korrekt anwenden.
+          <a href="#docker-commands-table">Siehe Optionen</a>
+        </li>
+      </ul>
+    </div>
 
-    <h2>Elementare Docker-Befehle</h2>
-    <ul>
-      <li>
-        Sie kennen die grundlegenden Befehle zum Erzeugen, Starten, Beenden und
-        Löschen von Images und Containern.
-      </li>
-      <li>
-        Sie können die wichtigsten Optionen von docker run (--name, --rm,
-        --network, --ip, -d, -it, -p, -v, -e) korrekt anwenden. <a href="#docker-commands-table">Siehe Optionen</a>
-      </li>
-    </ul>
-    <h2 id="docker-commands-table">Docker Befehle</h2>
-    <p>
-      Jeder Befehl in der Shell beginnt mit "docker". Nach dem Doppelpunkt kommt
-      immer die Version des Images.
-    </p>
+    <div class="section">
+      <h2 id="docker-commands-table">Docker Befehle</h2>
+      <p>
+        Jeder Befehl in der Shell beginnt mit "docker". Nach dem Doppelpunkt
+        kommt immer die Version des Images.
+      </p>
 
-    <h3>Simple Docker-Befehle</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Beschreibung</th>
-          <th>Docker-Befehl</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Image herunterladen</td>
-          <td>docker pull ubuntu:latest</td>
-        </tr>
-        <tr>
-          <td>Images anzeigen</td>
-          <td>docker images</td>
-        </tr>
-        <tr>
-          <td>Container starten (allg.)</td>
-          <td>docker run</td>
-        </tr>
-        <tr>
-          <td>Spezifischen Container starten</td>
-          <td>docker run -it[shell] --name [container_name] [image]</td>
-        </tr>
-        <tr>
-          <td>Alle gestarteten Container anzeigen</td>
-          <td>docker ps</td>
-        </tr>
-        <tr>
-          <td>Shell verlassen vom Container</td>
-          <td>exit</td>
-        </tr>
-        <tr>
-          <td>Container wieder starten nachdem er mit Exit gestoppt</td>
-          <td>docker start -i [container_name]</td>
-        </tr>
-        <tr>
-          <td>Container stoppen</td>
-          <td>docker stop [container_name]</td>
-        </tr>
-        <tr>
-          <td>Container löschen, jedoch bleibt das Image vorhanden</td>
-          <td>docker rm [container_name]</td>
-        </tr>
-        <tr>
-          <td>Image löschen</td>
-          <td>docker rmi [image_name:tag]</td>
-        </tr>
-        <tr>
-          <td>Zusammensetzung von Image Namen</td>
-          <td>source/imagename:tag</td>
-        </tr>
-        <tr>
-          <td>Einen Befehl in einem Container direkt ausführen</td>
-          <td>
-            docker exec [Optionen(-it)] [container_name] [Befehl(/bin/bash)]
-          </td>
-        </tr>
-        <tr>
-        </tr>
-      </tbody>
-    </table>
+      <h3>Simple Docker-Befehle</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Beschreibung</th>
+            <th>Docker-Befehl</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Image herunterladen</td>
+            <td>docker pull ubuntu:latest</td>
+          </tr>
+          <tr>
+            <td>Images anzeigen</td>
+            <td>docker images</td>
+          </tr>
+          <tr>
+            <td>Container starten (allg.)</td>
+            <td>docker run</td>
+          </tr>
+          <tr>
+            <td>Spezifischen Container starten</td>
+            <td>docker run -it[shell] --name [container_name] [image]</td>
+          </tr>
+          <tr>
+            <td>Alle gestarteten Container anzeigen</td>
+            <td>docker ps</td>
+          </tr>
+          <tr>
+            <td>Shell verlassen vom Container</td>
+            <td>exit</td>
+          </tr>
+          <tr>
+            <td>Container wieder starten nachdem er mit Exit gestoppt</td>
+            <td>docker start -i [container_name]</td>
+          </tr>
+          <tr>
+            <td>Container stoppen</td>
+            <td>docker stop [container_name]</td>
+          </tr>
+          <tr>
+            <td>Container löschen, jedoch bleibt das Image vorhanden</td>
+            <td>docker rm [container_name]</td>
+          </tr>
+          <tr>
+            <td>Image löschen</td>
+            <td>docker rmi [image_name:tag]</td>
+          </tr>
+          <tr>
+            <td>Zusammensetzung von Image Namen</td>
+            <td>source/imagename:tag</td>
+          </tr>
+          <tr>
+            <td>Einen Befehl in einem Container direkt ausführen</td>
+            <td>
+              docker exec [Optionen(-it)] [container_name] [Befehl(/bin/bash)]
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-    <h3>Docker-Optionen</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Beschreibung</th>
-          <th>Docker-Befehl</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Sie geben Ihrem Container einen Namen.</td>
-          <td>docker run --name [container_name] [image_name]</td>
-        </tr>
-        <tr>
-          <td>Container automatisch entfernen nach dem Beenden.</td>
-          <td>docker run --rm [image_name]</td>
-        </tr>
-        <tr>
-          <td>Bestimmen, welchem Netzwerk der Container angehört.</td>
-          <td>docker run --network [network_name] [image_name]</td>
-        </tr>
-        <tr>
-          <td>Festlegen einer festen IP-Adresse für den Container.</td>
-          <td>docker run --ip 192.168.0.10 [image_name]</td>
-        </tr>
-        <tr>
-          <td>Starten des Containers im Hintergrund.</td>
-          <td>docker run -d [image_name]</td>
-        </tr>
-        <tr>
-          <td>Starten einer interaktiven Sitzung im Container.</td>
-          <td>docker run -it [image_name]</td>
-        </tr>
-        <tr>
-          <td>Weiterleitung von Ports zwischen Host und Container.</td>
-          <td>docker run -p 8080:80 [image_name]</td>
-        </tr>
-        <tr>
-          <td>Hinzufügen von Volumes zum Container.</td>
-          <td>docker run -v /host/directory:/container/directory [image_name]</td>
-        </tr>
-        <tr>
-          <td>
-            Setzen von Umgebungsvariablen im Container während der Ausführung.
-          </td>
-          <td>docker run -e "VAR=value" [image_name]</td>
-        </tr>
-        <tr>
-        </tr>
-      </tbody>
-    </table>
+      <h3>Docker-Optionen</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Beschreibung</th>
+            <th>Docker-Befehl</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sie geben Ihrem Container einen Namen.</td>
+            <td>docker run --name [container_name] [image_name]</td>
+          </tr>
+          <tr>
+            <td>Container automatisch entfernen nach dem Beenden.</td>
+            <td>docker run --rm [image_name]</td>
+          </tr>
+          <tr>
+            <td>Bestimmen, welchem Netzwerk der Container angehört.</td>
+            <td>docker run --network [network_name] [image_name]</td>
+          </tr>
+          <tr>
+            <td>Festlegen einer festen IP-Adresse für den Container.</td>
+            <td>docker run --ip 192.168.0.10 [image_name]</td>
+          </tr>
+          <tr>
+            <td>Starten des Containers im Hintergrund.</td>
+            <td>docker run -d [image_name]</td>
+          </tr>
+          <tr>
+            <td>Starten einer interaktiven Sitzung im Container.</td>
+            <td>docker run -it [image_name]</td>
+          </tr>
+          <tr>
+            <td>Weiterleitung von Ports zwischen Host und Container.</td>
+            <td>docker run -p 8080:80 [image_name]</td>
+          </tr>
+          <tr>
+            <td>Hinzufügen von Volumes zum Container.</td>
+            <td>
+              docker run -v /host/directory:/container/directory [image_name]
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Setzen von Umgebungsvariablen im Container während der Ausführung.
+            </td>
+            <td>docker run -e "VAR=value" [image_name]</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <footer>
       <p>&copy; 2024 Docker Inc. Alle Rechte vorbehalten.</p>
     </footer>
   </body>
 </html>
-
