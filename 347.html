@@ -1,109 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-    id="favi"
-    rel="icon"
-    type="image/x-icon"
-    href="pics/ngabrielifavi-removebg-preview.png"
-  />
-  <title>Kontakt</title>
-  <style>
-    /* Stile für das Iframe-Element */
-    iframe {
-      width: 100%;
-      height: calc(100vh - 8vh); /* Hier passen wir die Höhe entsprechend an */
-      border: none; /* Rand entfernen, um eine nahtlose Integration zu erreichen */
-    }
-    /* Festlegen der Hintergrundfarbe der Seite */
-    body {
-      background-color: white;
-      color: black; /* Textfarbe auf schwarz setzen */
-    }
-    /* Stile für das Menü */
-    #menu123 {
-      background-color: #333; /* Hintergrundfarbe des Menüs */
-      color: white; /* Textfarbe des Menüs */
-    }
-    #menu123 ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    #menu123 ul li {
-      display: inline-block;
-      margin-right: 20px;
-    }
-    #menu123 ul li a {
-      text-decoration: none;
-      color: white;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Docker Befehle und wichtige Links</title>
+<style>
+  body {
+    font-family: "Aptos", sans-serif;
+    font-size: 16px;
+    margin: 0;
+  }
+  h1, h2 {
+    margin: 10px 0;
+  }
+  ul, ol {
+    margin: 5px 0;
+    padding-left: 20px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
 </head>
-<body id="contacts-k">
-  <nav id="menu123">
-    <ul class="main-menu">
-      <li><a href="Uebermich.html">Über mich</a></li>
-      <li><a href="Faehigkeiten.html">Fähigkeiten</a></li>
-      <li><a href="Portfolio.html">Portfolio</a></li>
-      <li><a href="Kontakt.html">Kontakt</a></li>
-    </ul>
-  </nav>
+<body>
+  <h1><a href="https://www.notion.so/Docker-Befehle-2416caf8951d46f1bfb62870445af1d9?pvs=21">Docker Befehle</a></h1>
+  <h2>Wichtige Links</h2>
+  <ul>
+    <li><a href="https://moodle.gbssg.ch/course/view.php?id=30">Moodle</a></li>
+    <li><a href="https://gbssg.gitlab.io/m347/">Modul 347 Dienst mit Container anwenden</a></li>
+  </ul>
 
-  <div id="myHeader">
-    <header>
-      <a id="Titel" href="index.html">Personal Webseite</a>
-      <p id="center">347_1</p>
-    </header>
-  </div>
-  <div>
-    [Docker Befehle](https://www.notion.so/Docker-Befehle-2416caf8951d46f1bfb62870445af1d9?pvs=21)
+  <h2>Begriffserklärungen</h2>
+  <ul>
+    <li><strong>Containerisierung</strong>: Schreibgeschützte Vorlage mit dem Speicherbild eines Containers.</li>
+    <li><strong>Image</strong>: Aktive Instanz eines Images.</li>
+    <li><strong>Layer</strong>: Teil eines Images, der einen Befehl oder eine Datei enthält.</li>
+    <li><strong>Repository</strong>: Gruppierung von gleichnamigen Images mit verschiedenen Tags.</li>
+    <li><strong>Registry</strong>: Verwaltet Repositories, z.B. DockerHub.</li>
+  </ul>
 
-**Wichtige Links**
+  <h2>Unterschied zwischen Virtualisierung und Cloud</h2>
+  <ul>
+    <li>Virtualisierung dreht sich um das Teilen eines einzelnen Computers in mehrere Teile, während Cloud Computing darum geht, Programme und Daten über das Internet auf Servern auszuführen und zu speichern.</li>
+  </ul>
 
-Moodle
+  <h2>Elementare Docker-Befehle</h2>
+  <ul>
+    <li>Sie kennen die elementaren Commands, um Images und Container zu erzeugen, starten, beenden und löschen.</li>
+  </ul>
 
-<https://moodle.gbssg.ch/course/view.php?id=30>
+  <h2>Docker Befehle</h2>
+  <p>Jeder Befehl in der Shell beginnt mit "docker". Nach dem Doppelpunkt kommt immer die Version des Images.</p>
 
-Gitlab
+  <h3>Simple Docker-Befehle</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Beschreibung</th>
+        <th>Docker-Befehl</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Image herunterladen</td>
+        <td>docker pull ubuntu:latest</td>
+      </tr>
+      <tr>
+        <td>Images anzeigen</td>
+        <td>docker images</td>
+      </tr>
+      <tr>
+        <td>Container starten (allg.)</td>
+        <td>docker run</td>
+      </tr>
+      <tr>
+        <td>Spezifischen Container starten</td>
+        <td>docker run -it[shell] --name [container_name] [image]</td>
+      </tr>
+      <tr>
+        <td>Alles gestarteten Container anzeigen</td>
+        <td>docker ps</td>
+      </tr>
+      <tr>
+        <td>Shell verlassen vom Container</td>
+        <td>exit</td>
+      </tr>
+      <tr>
+        <td>Container wieder starten nachdem er mit Exit gestoppt</td>
+        <td>docker start -i [container_name]</td>
+      </tr>
+      <tr>
+        <td>Container stoppen</td>
+        <td>docker stop [container_name]</td>
+      </tr>
+      <tr>
+        <td>Container löschen, jedoch bleibt das Image vorhanden</td>
+        <td>docker rm [container_name]</td>
+      </tr>
+      <tr>
+        <td>Image löschen</td>
+        <td>docker rmi [image_name:tag]</td>
+      </tr>
+      <tr>
+        <td>Zusammensetzung von Image Namen</td>
+        <td>source/imagename:tag</td>
+      </tr>
+      <tr>
+        <td>Ein Befehl in einem Container direkt ausführen</td>
+        <td>docker exec [Optionen(-it)] [container_name] [Befehl(/bin/bash]</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
-https://gbssg.gitlab.io/m347/
+  <h3>Docker Optionen</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Beschreibung</th>
+        <th>Docker-Befehl</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sie geben Ihrem Container einen Namen.</td>
+        <td>docker run --name [container_name] [image_name]</td>
+      </tr>
+      <tr>
+        <td>Container automatisch entfernen nach dem Beenden.</td>
+        <td>docker run --rm [image_name]</td>
+      </tr>
+      <tr>
+        <td>Bestimmen, welchem Netzwerk der Container angehört.</td>
+        <td>docker run --network [network_name] [image_name]</td>
+      </tr>
+      <tr>
+        <td>Festlegen einer festen IP-Adresse für den Container.</td>
+        <td>docker run --ip 192.168.0.10 [image_name]</td>
+      </tr>
+      <tr>
+        <td>Starten des Containers im Hintergrund.</td>
+        <td>docker run -d [image_name]</td>
+      </tr>
+      <tr>
+        <td>Starten einer interaktiven Sitzung im Container.</td>
+        <td>docker run -it [image_name]</td>
+      </tr>
+      <tr>
+        <td>Weiterleitung von Ports zwischen Host und Container.</td>
+        <td>docker run -p 8080:80 [image_name]</td>
+    </tr>
+    <tr>
+      <td>Hinzufügen von Volumes zum Container.</td>
+      <td>docker run -v /host/directory:/container/directory [image_name]</td>
+    </tr>
+    <tr>
+      <td>Setzen von Umgebungsvariablen im Container während der Ausführung.</td>
+      <td>docker run -e "VAR=value" [image_name]</td>
+    </tr>
+  </tbody>
+</table>
 
-- **Sie können die Begriffe "Containerisierung", "Image", "Layer", "Container", "Repository", "Registry" und Dockerfile erklären**
-  - Image: Schreibgeschütze Vorlage mit dem Speicherbild eines Containers (Aus dem kann ein Container instanziert werden:
-  - Container: Aktive Instanz eines Images
-  - Layer: Teil eines Images (Beinhaltet Befehl oder Datei)
-  - Repository: Grupppierung(Satz) von gleichnamigen Images mit verschiedenen Tags
-  - Registry: Verwaltet Repositories z.B. DockerHub
-- **Sie können die Begriffe Virtualisierung und Cloud voneinander trennen.**
-
-**Unterschied**:
-
-- - Virtualisierung dreht sich um das Teilen eines einzelnen Computers in mehrere Teile, während Cloud Computing darum geht, Programme und Daten über das Internet auf Servern auszuführen und zu speichern.
-- **Sie kennen die elementaren Commands, um Images und Container zu erzeugen, starten, beenden und löschen**
-
-[Docker Befehle](https://www.notion.so/Docker-Befehle-2416caf8951d46f1bfb62870445af1d9?pvs=21)
-
-- **Sie können die wichtigsten Optionen von docker run (--name, --rm, --network, --ip, -d, -it, -p, -v, -e) korrekt anwenden**
-- **Sie können verschiedene Versionen (tags) eines Container-Images nutzen**
-- **Sie können Portweiterleitungen in Betrieb nehmen.**
-- **Sie können benannte und gemountete Volumen korrekt einsetzen.**
-- **Sie verstehen den Standardaufbau eines Netzwerks mit Docker.**
-- **Sie können Docker-**[**Netzwerke**](https://moodle.gbssg.ch/mod/page/view.php?id=651) **definieren und diese den Containern zuweisen**
-- Sie kennen die Syntax von Dockerfiles.
-- Sie können die 12 verschiedenen Anweisungen von Dockerfiles erklären
-- Sie können zwischen ENTRYPOINT und CMD sowie COPY und ADD unterscheiden
-- Sie können eigene Dockerfiles für eine Webseite erstellen, testen und dokumentieren.
-  </div>
-
-  <!-- Hier wird das Word-Dokument eingebettet -->
-  <iframe src="pics/347_P1.docx" frameborder="0"></iframe>
-
-  <script>
-    // Deine JavaScript-Anpassungen hier hinzufügen, falls benötigt
-  </script>
 </body>
 </html>
+
